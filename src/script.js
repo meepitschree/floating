@@ -22,8 +22,8 @@ import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 
 /**========CONTROLS==========
  * scroll = zoom
- * R-click = rotate
- * L-click = pan
+ * L-click = rotate
+ * R-click = pan
  *
  * 'SPACE' - toggle auto-rotation
  * 'B' - toggle bubble
@@ -115,7 +115,7 @@ function init() {
    * CONTROLS
    */
   controls = new OrbitControls(camera, renderer.domElement);
-  controls.minDistance = 8;
+  controls.minDistance = 8.65;
   controls.maxDistance = 50;
   controls.enableDamping = true;
   // controls.autoRotateSpeed = 0.5;

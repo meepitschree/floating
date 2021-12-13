@@ -1,4 +1,4 @@
-# <3
+# <3 dec 14 2021
 
 a lil someplace warm for your 24th birthday.
 
@@ -16,6 +16,9 @@ npm run dev
 
 # Build for production in the dist/ directory
 npm run build
+
+# deploy to gh-pages
+npm run deploy
 ```
 
 (Starter courtesy of Bruno Simon of https://threejs-journey.xyz/)
