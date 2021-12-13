@@ -1,7 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import * as dat from "dat.gui";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DDSLoader } from "three/examples/jsm/loaders/DDSLoader";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
@@ -11,8 +10,12 @@ import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 
 /**
- * this is a mess, but I'm glad I put it together--
- * a lil someplace warm for your 24th birthday.
+ * for my bb:
+ * a lil someplace warm for your 24th birthday
+ * (perhaps it's just another excuse for me to do something special for you)
+ *
+ * I had fun & learnt a lot putting this together!
+ * thank you for being you.
  */
 
 let camera, scene, renderer, controls, mixer, clock;
