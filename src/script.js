@@ -9,13 +9,24 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 
-/**
- * for my bb:
+/** for my bb:
+ *
  * a lil someplace warm for your 24th birthday
- * (perhaps it's just another excuse for me to do something special for you)
+ * (an excuse for me to do something special for you)
  *
  * I had fun & learnt a lot putting this together!
- * thank you for being you.
+ * as always, thank you for being you. ✧
+ *
+ * xt
+ */
+
+/**========CONTROLS==========
+ * scroll = zoom
+ * R-click = rotate
+ * L-click = pan
+ *
+ * 'SPACE' - toggle auto-rotation
+ * 'B' - toggle bubble
  */
 
 let camera, scene, renderer, controls, mixer, clock;
