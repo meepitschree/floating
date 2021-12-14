@@ -20,15 +20,6 @@ import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
  * xt
  */
 
-/**========CONTROLS==========
- * scroll = zoom
- * L-click = rotate
- * R-click = pan
- *
- * 'SPACE' - toggle auto-rotation
- * 'B' - toggle bubble
- */
-
 let camera, scene, renderer, controls, mixer, clock;
 let composer, fxaaPass;
 let gltfModel,
@@ -54,6 +45,22 @@ let windowHalfY = window.innerHeight / 2;
 init();
 animate();
 
+// instructions menu
+var toggleInfo = function () {
+  const infoText = document.getElementById("info-text");
+  const currStyle = infoText.style.display;
+  if (currStyle === "none") {
+    infoText.style.display = "block";
+    infoIcon.style.opacity = "1";
+  } else {
+    infoText.style.display = "none";
+    infoIcon.style.opacity = "0.4";
+  }
+};
+const infoIcon = document.getElementById("info-icon");
+infoIcon.src = "assets/images/info-icon.png";
+infoIcon.onclick = toggleInfo;
+
 document.addEventListener(
   "keydown",
   (event) => {
@@ -65,6 +72,9 @@ document.addEventListener(
     }
     if (event.code === "KeyB") {
       orb.visible = !orb.visible;
+    }
+    if (event.code === "KeyI") {
+      toggleInfo();
     }
   },
   false
@@ -86,7 +96,7 @@ function init() {
   );
 
   camera.position.x = -22;
-  camera.position.y = 13;
+  camera.position.y = 10;
   camera.position.z = 28;
 
   clock = new THREE.Clock();
@@ -120,7 +130,7 @@ function init() {
   controls.enableDamping = true;
   // controls.autoRotateSpeed = 0.5;
   // controls.autoRotate = true;
-  controls.target.set(0, 3, 0);
+  controls.target.set(0, 1.05, 0);
 
   scene.add(camera);
 
