@@ -20,6 +20,7 @@ import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
  * xt
  */
 
+console.log("made with love.");
 let camera, scene, renderer, controls, mixer, clock;
 let composer, fxaaPass;
 let gltfModel,
@@ -47,14 +48,15 @@ animate();
 
 // controls menu
 var toggleInfo = function () {
+  console.log("toggled controls menu");
   const infoText = document.getElementById("info-text");
-  const currStyle = infoText.style.display;
-  if (currStyle === "none") {
-    infoText.style.display = "block";
-    infoIcon.style.opacity = "1";
-  } else {
+  let currStyle = infoText.style.display;
+  if (currStyle === "block") {
     infoText.style.display = "none";
     infoIcon.style.opacity = "0.4";
+  } else {
+    infoText.style.display = "block";
+    infoIcon.style.opacity = "0.9";
   }
 };
 const infoIcon = document.getElementById("info-icon");
