@@ -45,7 +45,7 @@ let windowHalfY = window.innerHeight / 2;
 init();
 animate();
 
-// instructions menu
+// controls menu
 var toggleInfo = function () {
   const infoText = document.getElementById("info-text");
   const currStyle = infoText.style.display;
