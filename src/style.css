@@ -53,7 +53,7 @@ li {
 }
 
 /*hide info on small screens; assuming mobile lmao*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   #info {
     visibility: hidden;
   }
