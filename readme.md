@@ -1,6 +1,4 @@
-# <3 dec 14 2021
-
-a lil someplace warm for your 24th birthday.
+# <3 
 
 ## Setup
 
