@@ -9,17 +9,6 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 
-/** for my bb:
- *
- * a lil someplace warm for your 24th birthday
- * (an excuse for me to do something special for you)
- *
- * I had fun & learnt a lot putting this together!
- * as always, thank you for being you. ✧
- *
- * xt
- */
-
 console.log("made with love.");
 let camera, scene, renderer, controls, mixer, clock;
 let composer, fxaaPass;
