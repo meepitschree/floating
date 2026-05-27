@@ -9,6 +9,13 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
 
+/** ✧
+ *
+ * learned a lot :) thank you
+ *
+ * xt
+ */
+
 console.log("made with love.");
 let camera, scene, renderer, controls, mixer, clock;
 let composer, fxaaPass;
@@ -253,7 +260,7 @@ function init() {
    */
   const loader = new GLTFLoader();
   loader.load(
-    "assets/models/tree.6b.gltf",
+    "assets/models/tree.10.gltf",
     function (gltf) {
       scene.add(gltf.scene);
       gltfModel = gltf.scene;

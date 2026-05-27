@@ -1,4 +1,4 @@
-# <3 
+# <3
 
 ## Setup
 
@@ -9,7 +9,7 @@ Run this followed commands:
 # Install dependencies (only the first time)
 npm install
 
-# Run the local server at localhost:8080
+# Run the  local server at
 npm run dev
 
 # Build for production in the dist/ directory
